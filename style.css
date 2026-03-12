@@ -410,6 +410,12 @@ nav a:hover {
     color: white;
 }
 
+/* Underline effect upon mouse hover */
+.contact-chat a:hover,
+.contact-social a:hover {
+    text-decoration: underline
+}
+
 /* Latest Post Fold */
 #blog {
     padding: 45px 40px 70px 40px;
@@ -566,6 +572,16 @@ nav a:hover {
         text-align: center
     }
 
+    /* Stack expertise cards vertically */
+    .expertise-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .expertise-card {
+        width: 90%;
+    }
+
     #hobbies {
         padding: 30px 0;
     }
@@ -573,4 +589,44 @@ nav a:hover {
     .carousel-slide {
         height: 300px;
     }
+
+    .contact-grid {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form texxtarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-form textarea {
+        height:200px;
+    }
+
+    .contact-options {
+        flex: none;
+        width: 100%;
+    }
+
+    .contact-call,
+    .contact-chat,
+    .contact-social {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Stack Latest Post cards vertically */
+    .blog-grid {
+        flex-direction: column;
+    }
+
+    .blog-card {
+        width: 100%;
+    }
+
 }
