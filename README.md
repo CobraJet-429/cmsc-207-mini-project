@@ -11,10 +11,13 @@ This project is a single-page, personal website built with **HTML**, **CSS**, an
 - A "Latest Post" section
 
 ## Features
-- Mobile-friendly design
-- CSS-styled page components
-- JavaScript interactivity
-- Responsive images (based on device)
+- Mobile-friendly, responsive design with CSS media queries for different screen sizes
+- Styled page components using CSS for layout, colors, and typography
+- JavaScript interactivity for dynamic content
+- Responsive images that adjust based on screen size and device width
+- Semantic HTML structure using proper tags (header, section, footer, etc.)
+- Navigation menu (with anchor links) that also adjust layout based on screen size
+- Hover effects and simple visual transitions using CSS
 
 ## Technologies Used
 - HTML5
