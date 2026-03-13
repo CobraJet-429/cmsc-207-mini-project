@@ -1,5 +1,5 @@
 // Grab all slides and prev and next buttons
-const track = document.querySelector('.carousel-track')
+const track = document.querySelector('.carousel-track');
 const slides = document.querySelectorAll('.carousel-slide');
 const prevBtn = document.querySelector('.carousel-prev');
 const nextBtn = document.querySelector('.carousel-next');
@@ -31,21 +31,6 @@ function showSlide(index, animate=true) {
     track.style.transform = `translateX(-${index * 100}%)`;
 }
 
-// After transition ends snap if on a clone
-track.addEventListener('transitionend', function() {
-    // If on the cloned first slide at the end, snap to real first slide
-    if (currentIndex === allSlides.length - 1) {
-        currentIndex = 1;
-        showSlide(currentIndex, false);
-    }
-
-    // If on cloned last slide at beginning, snap to real last slide
-    if (currentIndex === 0) {
-        currentIndex = allSlides.length-2;
-        showSlide(currentIndex, false);
-    }
-});
-
 // Show first real slide on load
 showSlide(currentIndex, false);
 
@@ -58,7 +43,7 @@ function updatePDots(index) {
     dots[realIndex].classList.add('active');
 }
 
-// For disablng buttons during transition to prevent rapid clicking
+// For disabling buttons during transition to prevent rapid clicking
 function disableButtons() {
     nextBtn.disabled = true;
     prevBtn.disabled = true;
@@ -101,11 +86,35 @@ track.addEventListener('transitionend', function() {
     }
 });
 
-
 // Toggle the hamburger menu at a certain screen width
 const hamburger = document.querySelector('.hamburger');
 const nav = document.querySelector('nav');
 
 hamburger.addEventListener('click', function() {
     nav.classList.toggle('open');
+});
+
+// Fun Fact Modal
+const modal = document.getElementById('funFactModal');
+const readMoreBtn = document.querySelector('.btn-read-more');
+const closeBtn = document.querySelector('.modal-close');
+
+const funFact = "Fun Fact About Student: Although I now work in digital marketing and study computer science, my original degree was in Aircraft Maintenance Technology at FEATI University.";
+
+// Open modal on Read More click
+readMoreBtn.addEventListener('click', function() {
+    document.getElementById('modal-text').textContent = funFact;
+    modal.classList.add('active');
+});
+
+// Close modal on Close button click
+closeBtn.addEventListener('click', function() {
+    modal.classList.remove('active');
+});
+
+// Close modal when clicking outside the box
+modal.addEventListener('click', function(e) {
+    if (e.target === modal) {
+        modal.classList.remove('active');
+    }
 });
