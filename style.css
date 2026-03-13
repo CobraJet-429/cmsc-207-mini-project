@@ -590,6 +590,11 @@ nav a:hover {
         height: 300px;
     }
 
+    .skill-text {
+        max-width: 70%;
+        padding: 40px;
+    }
+
     .contact-grid {
         flex-direction: column;
     }
