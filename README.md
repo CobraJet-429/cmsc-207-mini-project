@@ -3,21 +3,23 @@
 This project is a single-page, personal website built with **HTML**, **CSS**, and **JavaScript**, following the principles taught in Clyde Hatter's book *Create with Code: Build Your Own Website*. It demonstrates semantic HTML structure, responsive design, and simple interactivity.
 
 ## Page Content
-- Header with a logo and a navigation menu
-- About Me section with image and a short introduction
+- Header with a logo, navigation menu, and social icons
+- About Me section with a student photo, short text introduction, and an interactive button
 - Expertise/Skills section in a card row format
-- Hobbies & Interests section formatted in a carousel
-- Contact Info section with a simple contact form
-- A "Latest Post" section
+- Hobbies & Interests section formatted in a carousel with pagination dots
+- Contact Info section with a simple contact form and contact options
+- A "Latest Posts" section
 
 ## Features
-- Mobile-friendly, responsive design with CSS media queries for different screen sizes
-- Styled page components using CSS for layout, colors, and typography
-- JavaScript interactivity for dynamic content
-- Responsive images that adjust based on screen size and device width
-- Semantic HTML structure using proper tags (header, section, footer, etc.)
-- Navigation menu (with anchor links) that also adjust layout based on screen size
-- Hover effects and simple visual transitions using CSS
+- Semantic HTML5 structure using proper tags (header, nav, section, footer)
+- Responsive design using CSS media queries that adapt the layout across desktop and mobile
+- Menu collapse where the nav condenses into a toggle button on mobile screens
+- CSS styling for layout, typography, colors, and hover effects across all sections
+- Vanilla JS infinite loop carousel with smooth slide transitions and pagination dots
+- Modal popup triggered by the Read More button on the About Me section for dynamic content
+- Anchor-linked navigation menu scrolling to corresponding page sections
+- Responsive sections with images, text, and grids reflow based on screen width
+- CSS hover effects and visual transitions on buttons, links, and nav items
 
 ## Technologies Used
 - HTML5
@@ -25,4 +27,4 @@ This project is a single-page, personal website built with **HTML**, **CSS**, an
 - JavaScript (vanilla)
 
 ## Live Demo
-[View the website](https://reubenisidoro.github.io/cmsc-207-mini-project/)
+[View the website](https://reubenjosephisidoro.github.io/cmsc-207-mini-project/)
